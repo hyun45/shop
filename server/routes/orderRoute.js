@@ -38,6 +38,20 @@ router.post('/', async (req, res) => {
     }
 });
 
+router.post('/order', async (req, res) => {
+    try {
+        const orderData2 = req.body;
+    
+        // 주문 정보를 데이터베이스에 저장
+        const newOrder = await OrderItem.create(orderData2);
+    
+        res.status(201).json(newOrder); // 성공적으로 저장된 주문 정보를 응답
+      } catch (error) {
+        console.error("주문을 저장하는 도중 오류가 발생했습니다.", error);
+        res.status(500).json({ message: "주문을 저장하는 도중 오류가 발생했습니다." });
+      }
+});
+
 router.use((req, res, next) => {
     next('Not found error!');
 });
