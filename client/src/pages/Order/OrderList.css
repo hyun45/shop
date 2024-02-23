@@ -54,12 +54,11 @@ h4,
   width: 450px;
   margin:30px;
   border:none;
-
 }
 .product_zip img {
   width:150px;
 }
-.product_content {
+.productContent {
   float:right;
   width: 290px;
   height: 140px;

@@ -3,6 +3,8 @@ const response = require("../data/responseFrom");
 const resTEXT = require("../data/responseString");
 const OrderItem = require('../models/orderItem');
 const CartItem = require('../models/cartItem');
+const authService = require('../service/authService');
+const orderController = require('../controller/orderController');
 const router = express.Router();
 
 router.post('/', async (req, res) => {
@@ -51,6 +53,8 @@ router.post('/order', async (req, res) => {
         res.status(500).json({ message: "주문을 저장하는 도중 오류가 발생했습니다." });
       }
 });
+
+router.get('/:userId', authService.isLoggedIn, orderController.findUserOrder);
 
 router.use((req, res, next) => {
     next('Not found error!');

@@ -5,6 +5,7 @@ const authService = require("../service/authService");
 const userController = require("../controller/userController");
 const indexController = require("../controller/indexController");
 const productController = require("../controller/productController");
+const orderController = require("../controller/orderController");
 const response = require("../data/responseFrom");
 const resTEXT = require("../data/responseString");
 const multer = require("multer");
@@ -30,12 +31,14 @@ router.post('/image', upload.single('image'), (req, res) => {
 
 
 router.get('/user', authService.isLoggedIn, authService.isAdminIn, indexController.usersIndex);
-router.get('/user/:userId',authService.isLoggedIn, authService.isAdminIn,  userController.getUser);
+router.get('/user/:userId',authService.isLoggedIn, authService.isAdminIn,  userController.findUser);
 router.get('/product',authService.isLoggedIn, authService.isAdminIn,  indexController.productsIndex);
 router.get('/product/:productId', authService.isLoggedIn, authService.isAdminIn, productController.findProduct);
 router.post('/product/createProduct', authService.isLoggedIn, authService.isAdminIn, productController.createProduct);
 router.post('/product/updateProduct', authService.isLoggedIn, authService.isAdminIn, productController.updateProduct);
 router.get('/product/deleteProduct/:productId', authService.isLoggedIn, authService.isAdminIn, productController.deleteProduct)
+router.get('/orderList', authService.isLoggedIn, authService.isAdminIn, indexController.ordersIndex);
+router.get('/order/:userId/:createdAt', authService.isLoggedIn, authService.isAdminIn, orderController.findOrder);
 
 router.use((req, res, next) => {
     next('Not found error!');

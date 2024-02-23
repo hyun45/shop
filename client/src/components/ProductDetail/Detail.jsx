@@ -16,6 +16,7 @@ const Detail = () => {
 
   const navigate = useNavigate();
 
+
   useEffect(() => {
     getProduct(productId);
   }, [productId]);
@@ -41,11 +42,20 @@ const Detail = () => {
 
   const handleAddToCart = async () => {
     try {
+      // Send request to add product to cart
       const res = await axiosInstance.post('/cart/addCart', {
         productId,
         amount: quantity
       });
       console.log(res.data);
+      // // Handle response
+      // if (res.data.message === "UPDATE_SUCCESS") {
+      //   // If the cart item was updated
+      //   console.log("Product amount updated in cart.");
+      // } else {
+      //   // If a new cart item was added
+      //   console.log("Product added to cart.");
+      // }
     } catch (error) {
       console.error("Error adding product to cart:", error);
     }
@@ -70,6 +80,7 @@ const Detail = () => {
     });
   };
 
+
   return (
     <div>
       <Header />
@@ -80,21 +91,9 @@ const Detail = () => {
               <tbody>
                 <tr className="productImage">
                   <td>
-                    <Carousel
-                      className="imageSlider"
-                      showArrows={true}
-                      autoPlay={false}
-                      infiniteLoop={false}
-                      showThumbs={false}
-                      selectedItem={imageData[currentIndex]}
-                      onChange={(index) => setCurrentImageIndex(index)}
-                    >
-                      {imageData.map((image, index) => (
-                        <div className="productDetail_img"key={image.alt}>
+                        <div className="productDetail_img">
                           <img src={`http://localhost:5000/${product.image1}`} alt={product.name} />
                         </div>
-                      ))}
-                    </Carousel>
                   </td>
                 </tr>
                 <tr className="productInfo">
@@ -105,7 +104,6 @@ const Detail = () => {
                   <td className="starReview">
                     <span>★★★★☆</span>
                     <button>xxx개 리뷰 보기</button>
-                    {product.description}
                   </td>
                   <td className="detailPrice">
                     <span className="greenPrice">상품 금액</span><p>{product.price}</p><span>원</span>
@@ -116,7 +114,7 @@ const Detail = () => {
                     <button onClick={handleIncreaseQuantity}>+</button>
                   </td>
                   <button className="addCart" onClick={handleAddToCart}>장바구니</button>
-                  <button className="buyNow" onClick={handleBuyNow}>바로 구매</button>
+                  <a href="/orderList2"><button className="buyNow" onClick={handleBuyNow}>바로 구매</button></a>
                 </tr>
               </tbody>
             </table>

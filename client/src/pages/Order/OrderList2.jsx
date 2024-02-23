@@ -157,10 +157,10 @@ const OrderList2 = (props) => {
           <div className="product_info">
             <h2>상품정보</h2>
             <div className="product_zip">
-                <div>
+              <div>
                   <img
                     src={`http://localhost:5000/${orderData.productImage}`}
-                    alt=''
+                    alt={orderData.productName}
                   />
                   <div className="product_content">
                     <p>

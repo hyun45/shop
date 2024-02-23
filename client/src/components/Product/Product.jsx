@@ -149,7 +149,7 @@ function Product() {
                   <div id="star">
                   <p id="yellow">★★★★★</p>
                   <p>
-                    <a src={`http://localhost:5000/${product.image1}`}><button>구매하기</button></a>
+                    <button>구매하기</button>
                   </p>
                   </div>
                 </li>

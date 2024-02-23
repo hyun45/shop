@@ -9,7 +9,7 @@ import { useNavigate } from 'react-router';
 
 // 사용하고 싶은 옵션, 나열 되었으면 하는 순서대로 나열
 const toolbarOptions = [
-    // ["link", "image", "video"],
+    ["link", "image", "video"],
     [{ header: [1, 2, 3, false] }],
     ["bold", "italic", "underline", "strike"],
     ["blockquote"],

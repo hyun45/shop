@@ -42,6 +42,14 @@ exports.CART_MESSAGE = {
     ERROR: "[cart]요청 오류 발생"
 };
 
+exports.ORDER_MESSAGE = {
+    CREATE: "[order]주문 정보 추가 완료",
+    DELETE: "[order]주문 정보 삭제 완료",
+    UPDATE: "[order]주문 정보 업데이트 완료",
+    GET: "[order]주문 정보 요청 완료",
+    ERROR: "[order]요청 오류 발생"
+};
+
 exports.ADMIN_MESSAGE = {
     CREATE: "[admin]장바구니 정보 추가 완료",
     DELETE: "[admin]장바구니 정보 삭제 완료",

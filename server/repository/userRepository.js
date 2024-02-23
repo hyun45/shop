@@ -10,7 +10,7 @@ exports.createUser = (email, name, password, phone) => User.create({
 exports.findAllUser = () => User.findAll({attributes: ['email', 'name', 'phone']});
 
 
-exports.getUser = (userId) => User.findOne({where: {userId}, attributes: ['userId', 'email', 'name', 'phone']});
+exports.getUser = (userId) => User.findOne({where: {userId}, attributes: ['userId', 'email', 'name', 'phone', 'zipCode', 'address1', 'address2']});
 
 
 exports.addAdmin = (email) => User.update({userType: true}, {where: {email}});
