@@ -3,15 +3,12 @@ import { useNavigate, useParams } from "react-router-dom";
 import Header from "../../components/Header/Header";
 import jjimBtn from "./images/jjimBtn.png";
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import { Carousel } from 'react-responsive-carousel';
-import imageData from "./images/imageData";
 import './Detail.css';
 import axiosInstance from "../../utils/axios";
 
 const Detail = () => {
   const { productId } = useParams();
   const [product, setProduct] = useState(null);
-  const [currentIndex, setCurrentImageIndex] = useState(0);
   const [quantity, setQuantity] = useState(1);
 
   const navigate = useNavigate();
@@ -42,20 +39,11 @@ const Detail = () => {
 
   const handleAddToCart = async () => {
     try {
-      // Send request to add product to cart
       const res = await axiosInstance.post('/cart/addCart', {
         productId,
         amount: quantity
       });
       console.log(res.data);
-      // // Handle response
-      // if (res.data.message === "UPDATE_SUCCESS") {
-      //   // If the cart item was updated
-      //   console.log("Product amount updated in cart.");
-      // } else {
-      //   // If a new cart item was added
-      //   console.log("Product added to cart.");
-      // }
     } catch (error) {
       console.error("Error adding product to cart:", error);
     }
@@ -70,10 +58,8 @@ const Detail = () => {
       productName: product.name,
       productPrice: product.price,
       totalPrice: (product.price * quantity)
-      // 다른 필요한 정보들도 여기에 추가할 수 있음
     };
     console.log(orderData)
-    // 상품 정보와 수량을 orderList2 페이지로 전달하면서 이동
     navigate(
       '/orderList2',{
       state: { orderData: orderData }

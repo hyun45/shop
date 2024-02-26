@@ -28,21 +28,21 @@ exports.getUser = async (userId) => {
     return user
 };
 
-exports.updateUser = async (email, phone, address1, address2, zipCode) => {
+exports.updateUser = async (userId, email, name, phone, address1, address2, zipCode) => {
     const user = await userRepository.findUserByEmail(email);
     if (!user) {
         console.error(`[UserService]유저정보 업데이트 실패. `);
         throw ('Not updated!');
     }
-    await userRepository.updateUser(email, phone);
+    await userRepository.updateUser(userId, email, name, phone, address1, address2, zipCode);
     console.log(`${email} 유저 정보 업데이트 완료`)
 };
 
-exports.deleteUser = async (email) => {
-    const result = await userRepository.deleteUser(email);
+exports.deleteUser = async (userId) => {
+    const result = await userRepository.deleteUser(userId);
     if (!result) {
         console.error(`[UserService]유저 정보 삭제실패.`);
         throw ('Not delete!');
     }
-    console.log(`${email} 유저 삭제 완료`)
+    console.log(`${userId} 유저 삭제 완료`)
 };

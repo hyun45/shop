@@ -12,7 +12,7 @@ router.use(bodyParser.json());
 router.get('/', authService.isLoggedIn, authService.isPermissionIn, userController.getUser);
 router.post('/signUp', userController.createUser);
 router.get('/:userId', authService.isLoggedIn, authService.isPermissionIn, userController.findUser);
-router.post('/updateUser', authService.isLoggedIn, authService.isPermissionIn, userController.updateUser);
+router.put('/updateUser/:userId', authService.isLoggedIn, authService.isPermissionIn, userController.updateUser);
 router.get('/deleteUser/:userId', authService.isLoggedIn, authService.isPermissionIn, userController.deleteUser, authController.logout);
 
 

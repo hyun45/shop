@@ -10,7 +10,7 @@ exports.createUser = (email, name, password, phone) => User.create({
 exports.findAllUser = () => User.findAll({attributes: ['email', 'name', 'phone']});
 
 
-exports.getUser = (userId) => User.findOne({where: {userId}, attributes: ['userId', 'email', 'name', 'phone', 'zipCode', 'address1', 'address2']});
+exports.getUser = (userId) => User.findOne({where: {userId}, attributes: ['userId', 'email', 'name', 'phone', 'zipCode', 'address1', 'address2', 'userType']});
 
 
 exports.addAdmin = (email) => User.update({userType: true}, {where: {email}});
@@ -18,9 +18,9 @@ exports.addAdmin = (email) => User.update({userType: true}, {where: {email}});
 exports.denyAdmin = (email) => User.update({userType: false}, {where: {email}});
 
 
-exports.deleteUser = (email) => User.destroy({where: {email}});
+exports.deleteUser = (userId) => User.destroy({where: {userId}});
 
-exports.updateUser = (email, phone, address1, address2, zipCode) => User.update({phone}, {where: {email, address1, address2, zipCode}});
+exports.updateUser = (userId, email, name, phone, address1, address2, zipCode) => User.update({name, phone, address1, address2, zipCode}, {where: {userId, email}});
 
 exports.getUserType = (email) => User.findOne({where: {email}, attributes: ['userType']});
 

@@ -24,16 +24,17 @@ exports.findUser = async (req, res, next) => {
 };
 
 exports.updateUser = async (req, res, next) => {
-    const {email, phone, address1, address2, zipCode} = req.body;
-    await userService.updateUser(email, phone, address1, address2, zipCode)
+    const userId = req.params.userId;
+    const {email, name, phone, address1, address2, zipCode} = req.body;
+    await userService.updateUser(userId, email, name, phone, address1, address2, zipCode)
         .then(() =>
             res.status(200).json(response.responseFromMessage(resTEXT.RESPONSE_TEXT.SUCCESS,  resTEXT.USER_MESSAGE.UPDATE)))
         .catch(err => next(err));
 };
 
 exports.deleteUser = async (req, res, next) => {
-    const email = req.params.email;
-    await userService.deleteUser(email)
+    const userId = req.params.userId;
+    await userService.deleteUser(userId)
         .then(() =>
             res.status(200).json(response.responseFromMessage(resTEXT.RESPONSE_TEXT.SUCCESS,  resTEXT.USER_MESSAGE.DELETE)))
         .catch(err => next(err));

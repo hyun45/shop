@@ -43,7 +43,7 @@ module.exports = class OrderItem extends Sequelize.Model {
     }
 
     static associate(db){
-        db.OrderItem.belongsTo(db.User,  { foreignKey: 'userId', targetKey: 'userId' });
+        db.OrderItem.belongsTo(db.User,  { foreignKey: 'userId', targetKey: 'userId', onDelete: 'CASCADE' });   // cascade하지 않을 경우 삭제하면 userId 부분만 null로 바뀜
         db.OrderItem.belongsTo(db.Product,  { foreignKey: 'productId', targetKey: 'productId' });
 
     }

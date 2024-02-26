@@ -114,7 +114,7 @@ const Cart = ({ closeCart }) => {
 
   const handleCheckout = () => {
     // 결제 로직 추가하기
-    alert(`총 결제 금액: ${getTotalPrice()}원`);
+    window.location='/orderList'
   };
 
   const handleCloseCart = () => {
