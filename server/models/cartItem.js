@@ -26,7 +26,7 @@ module.exports = class CartItem extends Sequelize.Model {
     }
 
     static associate(db){
-        db.CartItem.belongsTo(db.User,  { foreignKey: 'userId', targetKey: 'userId', onDelete: 'CASCADE' });
+        db.CartItem.belongsTo(db.User,  { foreignKey: 'userId', targetKey: 'userId', onDelete: 'CASCADE' }); // 회원 탈퇴 시 장바구니 내역도 같이 삭제
         db.CartItem.belongsTo(db.Product,  { foreignKey: 'productId', targetKey: 'productId' });
         // db.CartItem.belongsTo(db.Cart,  { foreignKey: 'cartId', targetKey: 'cartId' });
     }
