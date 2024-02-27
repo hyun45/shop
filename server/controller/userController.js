@@ -18,7 +18,8 @@ exports.getUser = async (req, res, next) => {
 };
 
 exports.findUser = async (req, res, next) => {
-    await userService.getUser(req.params.userId)
+    const userId = req.params.userId;
+    await userService.getUser(userId)
         .then((user) => res.json(response.responseFromData(resTEXT.RESPONSE_TEXT.SUCCESS, resTEXT.USER_MESSAGE.GET, user)))
         .catch(err => next(err));
 };

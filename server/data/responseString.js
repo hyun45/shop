@@ -42,6 +42,14 @@ exports.CART_MESSAGE = {
     ERROR: "[cart]요청 오류 발생"
 };
 
+exports.WISHLIST_MESSAGE = {
+    CREATE: "[wishList]찜하기 정보 추가 완료",
+    DELETE: "[wishList]찜하기 정보 삭제 완료",
+    UPDATE: "[wishList]찜하기 정보 업데이트 완료",
+    GET: "[wishList]찜하기 정보 요청 완료",
+    ERROR: "[wishList]요청 오류 발생"
+};
+
 exports.ORDER_MESSAGE = {
     CREATE: "[order]주문 정보 추가 완료",
     DELETE: "[order]주문 정보 삭제 완료",

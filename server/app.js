@@ -16,6 +16,7 @@ const userRouter = require("./routes/userRoute");
 const authRouter = require("./routes/authRoute");
 const productRouter = require("./routes/productRoute");
 const cartRouter = require("./routes/cartRoute");
+const wishListRouter = require("./routes/wishListRoute");
 const adminRouter = require("./routes/adminRoute");
 const orderRouter = require("./routes/orderRoute");
 
@@ -64,6 +65,7 @@ app.use("/user", userRouter);
 app.use("/auth", authRouter);
 app.use('/product', productRouter);
 app.use('/cart', cartRouter);
+app.use('/wishList', wishListRouter);
 app.use('/admin', adminRouter);
 app.use('/order', orderRouter);
 

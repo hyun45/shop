@@ -30,8 +30,8 @@ const OrderList2 = (props) => {
   // userId = '기본값';
   }
   let shippingFee = 3000; // 기본 배송비
-  const finalTotalPrice = (orderData.quantity * orderData.productPrice) >= 30000 ? (orderData.quantity * orderData.productPrice) : (orderData.quantity * orderData.productPrice) + shippingFee;
-  if((orderData.quantity * orderData.productPrice) >= 30000){
+  const finalTotalPrice = (orderData.quantity * orderData.productPrice) >= 50000 ? (orderData.quantity * orderData.productPrice) : (orderData.quantity * orderData.productPrice) + shippingFee;
+  if((orderData.quantity * orderData.productPrice) >= 50000){
     shippingFee = 0;
   }
 

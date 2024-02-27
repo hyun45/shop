@@ -16,6 +16,12 @@ exports.findOrder = async (userId, createdAt) => {
     return orderItem;
 }
 
+exports.findOrderTime = async (createdAt) => {
+    const orderItem = orderRepository.findOrderTime(createdAt);
+    if(!orderItem) throw `[orderService] 주문 정보 없음`;
+    return orderItem;
+}
+
 exports.findUserOrder = async (userId) => {
     const orderItem = orderRepository.findUserOrder(userId);
     if(!orderItem) throw `[orderService] 주문 정보 없음`;
