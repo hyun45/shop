@@ -119,15 +119,17 @@ const Cart = ({ closeCart }) => {
 
       {cartItems.length > 0 && (
         <>
-          <table>
+          <table className="cart_table">
             {cartItems.map((cartItem) => (
               <tbody key={cartItem.cartItemId}>
                 <tr>
                   <td rowSpan={2}>
+                    <a href={`http://localhost:3000/store/${cartItem.productId}`}>
                     <img
                       src={`http://localhost:5000/${cartItem.productImage}`}
                       alt={cartItem.productName}
                     />
+                    </a>
                   </td>
                   <td>{cartItem.productName}</td>
                   <td>가격 : {cartItem.productPrice * cartItem.amount} 원</td>
@@ -139,7 +141,7 @@ const Cart = ({ closeCart }) => {
                     </button>
                   </td>
                 </tr>
-                <tr>
+                <tr id="quantity">
                   <td colSpan={3} className="quantity-control">
                     <button
                       onClick={() =>

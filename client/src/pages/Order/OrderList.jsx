@@ -234,13 +234,10 @@ const OrderList = (props) => {
         </div>
         <div className="payment_price">
           <h2>결제금액</h2>
-          <p>총 상품 금액</p>
-          <p>{totalPrice}원</p>
-          <p id="discount">할인금액</p>
-          <p>배송비</p>
-          <p>{shippingFee}원</p>
-          <p id="all_price">총 결제 금액</p>
-          <p id="all_price">{finalTotalPrice}원</p>
+          <p><strong>총 상품 금액</strong> {totalPrice}원</p>
+          <p id="discount"><strong>할인 금액</strong></p>
+          <p><strong>배송비</strong> {shippingFee}원</p>
+          <p id="all_price"><strong>총 결제 금액</strong>{finalTotalPrice}원</p>
           <form method="post" action="">
             <div className="agree">
               <div>

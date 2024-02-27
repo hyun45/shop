@@ -164,7 +164,7 @@ const Modify = () => {
             onClose={onClose}
           />
           <button onClick={updateUser}>저장</button>
-          <button onClick={deleteUser}>회원 탈퇴</button>
+          <button id="red" onClick={deleteUser}>회원 탈퇴</button>
         </div>
       </div>
     </div>
