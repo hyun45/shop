@@ -29,21 +29,20 @@ server/config/config.json
 
 server/.env
 
-PORT=5000
+PORT=5000 <br>
 SECRET=secretKey
 
-포트번호 변경 시
-client/src/utils/axios.js 에서 baseURL 변경
+포트번호 변경 시 <br>
+client/src/utils/axios.js 에서 baseURL 변경 <br>
 
 
-client/src/components/Cart/cart.jsx
-client/src/components/Cart/Jjim.jsx
-client/src/components/Product/Product.jsx
-client/src/components/ProductDetail/Detail.jsx
-client/src/pages/Order/OrderList.jsx
-client/src/pages/Order/OrderList2.jsx
-에서
-img src 변경
+client/src/components/Cart/cart.jsx <br>
+client/src/components/Cart/Jjim.jsx <br>
+client/src/components/Product/Product.jsx <br>
+client/src/components/ProductDetail/Detail.jsx <br>
+client/src/pages/Order/OrderList.jsx <br>
+client/src/pages/Order/OrderList2.jsx <br>
+에서 img src 변경
 
 
 
