@@ -46,7 +46,7 @@ client/src/pages/Order/OrderList2.jsx <br>
 
 
 회원가입 로그인
-<img src="https://github.com/hyun45/backup/assets/159392652/0384b29d-59c0-4369-a850-5703daa29016" />
+<img src="https://github.com/hyun45/backup/assets/159392652/66520c10-1f65-466f-b370-3b9ef68d4637" />
 
 
 
