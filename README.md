@@ -54,6 +54,8 @@ client/src/pages/Order/OrderList2.jsx <br>
 상품 등록
 <img src="https://github.com/hyun45/backup/assets/159392652/1000f860-1e1f-46ad-8a2e-97ab7c96cb89" />
 
+회원정보 수정
+<img src="https://github.com/hyun45/backup/assets/159392652/bf7c47ee-75c7-494b-851c-5834c73b9f2d" />
 
 
 
