@@ -48,10 +48,12 @@ client/src/pages/Order/OrderList2.jsx <br>
 회원가입 로그인
 <img src="https://github.com/hyun45/backup/assets/159392652/66520c10-1f65-466f-b370-3b9ef68d4637" />
 
+
+관리자로 사용할 아이디 회원가입 후 MySQL에서 user 테이블의 해당 아이디 userType을 1로 변경 필요
+
 상품 등록
 <img src="https://github.com/hyun45/backup/assets/159392652/1000f860-1e1f-46ad-8a2e-97ab7c96cb89" />
 
 
 
 
-관리자로 사용할 아이디 회원가입 후 MySQL에서 user 테이블의 해당 아이디 userType을 1로 변경 필요
