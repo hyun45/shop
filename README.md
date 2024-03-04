@@ -1,4 +1,4 @@
-# backup
+# shop
 
 server/config/config.json 생성
 
