@@ -1,6 +1,6 @@
 # backup
 
-server/config/config.json
+server/config/config.json 생성
 
 {
     "development": {
@@ -27,7 +27,7 @@ server/config/config.json
 }
   
 
-server/.env
+server/.env 생성
 
 PORT=5000 <br>
 SECRET=secretKey
