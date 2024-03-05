@@ -1,15 +1,15 @@
-# team
+# Team
+
 team|member
 :---:|:---:
 FE|[이민영](https://github.com/ming023)
 BE|[현승빈](https://github.com/45183)
 
 
+
+# Preview
+
 관리자로 사용할 아이디 회원가입 후 MySQL에서 user 테이블의 해당 아이디 userType을 1로 변경 필요
-
-# preview
-
-## 😎 Preview
 
 <html>
 <table>
@@ -34,6 +34,19 @@ BE|[현승빈](https://github.com/45183)
       스토어
     </th>
     <th>
+      상품 등록
+    </th>
+  </tr>
+  <tr>
+    <td>
+      <img src="https://github.com/hyun45/backup/assets/159392652/fbf059ec-a5e3-4896-855c-42bdc019a6f4" />
+    </td>
+    <td>
+      <img src="https://github.com/hyun45/backup/assets/159392652/1000f860-1e1f-46ad-8a2e-97ab7c96cb89" />
+    </td>
+   </tr>
+  <tr>
+    <th>
       장바구니
     </th>
     <th>
@@ -41,9 +54,6 @@ BE|[현승빈](https://github.com/45183)
     </th>
   </tr>
   <tr>
-    <td>
-      <img src="https://github.com/hyun45/backup/assets/159392652/fbf059ec-a5e3-4896-855c-42bdc019a6f4" />
-    </td>
     <td>
       <img src="https://github.com/hyun45/backup/assets/159392652/493ba819-6698-4e39-9a22-625547fb19a8" />
     </td>
@@ -58,9 +68,6 @@ BE|[현승빈](https://github.com/45183)
     <th>
       장바구니 상품 결제
     </th>
-    <th>
-      FAQ
-    </th>
   </tr>
   <tr>
     <td>
@@ -69,15 +76,12 @@ BE|[현승빈](https://github.com/45183)
     <td>
       <img src="https://github.com/hyun45/backup/assets/159392652/3dc93f3f-da7d-41e7-b396-cd7c16e8903d" />
     </td>
-    <td>
-      <img src="https://github.com/hyun45/backup/assets/159392652/67f4c6b0-391c-4755-a2a6-4fb3a81bfa34" />
-    </td>
     <tr>
     <th>
       관리자 페이지
     </th>
     <th>
-      상품 등록
+      FAQ
     </th>
     <th>
     </th>
@@ -87,7 +91,7 @@ BE|[현승빈](https://github.com/45183)
       <img src="https://github.com/hyun45/backup/assets/159392652/ac6a95c4-7542-4efc-8747-cf5aa427ea30" />
     </td>
     <td>
-      <img src="https://github.com/hyun45/backup/assets/159392652/1000f860-1e1f-46ad-8a2e-97ab7c96cb89" />
+      <img src="https://github.com/hyun45/backup/assets/159392652/67f4c6b0-391c-4755-a2a6-4fb3a81bfa34" />
     </td>
     <td>
     </td>
