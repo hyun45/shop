@@ -1,11 +1,11 @@
-# shop
-
 # team
 team|member
 :---:|:---:
 FE|[이민영](https://github.com/ming023)
 BE|[현승빈](https://github.com/45183)
 
+
+# shop
 
 server/config/config.json 생성
 
