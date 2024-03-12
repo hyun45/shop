@@ -96,7 +96,7 @@ BE|[현승빈](https://github.com/45183)
 </html>
 
 
-<h3> # Tech Stacks </h3> <br>
+<h3> Tech Stacks </h3> <br>
     <div style="margin: 0 auto; text-align: center;" align= "center">
         <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=CSS3&logoColor=white">
         <img src="https://img.shields.io/badge/Eslint-4B32C3?style=for-the-badge&logo=Eslint&logoColor=white">
