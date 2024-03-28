@@ -39,81 +39,102 @@ BE|[현승빈](https://github.com/45183)
     <th>
       회원가입 / 로그인
     </th>
+  </tr>
+  <tr>
+    <td>
+     <img src="https://github.com/hyun45/shop/assets/159392652/44ac24e7-c3a0-4c01-a8da-ce1b612fe142" />
+    </td>
+   </tr> 
+  <tr>
     <th>
       회원정보 수정
     </th>
   </tr>
   <tr>
     <td>
-      <img src="https://github.com/hyun45/backup/assets/159392652/66520c10-1f65-466f-b370-3b9ef68d4637" />
-    </td>
-    <td>
-      <img src="https://github.com/hyun45/backup/assets/159392652/bf7c47ee-75c7-494b-851c-5834c73b9f2d" />
+     <img src="https://github.com/hyun45/shop/assets/159392652/1caa2190-7070-490e-bd0e-f448fa0f0f03" />
     </td>
    </tr> 
   <tr>
     <th>
       스토어
     </th>
+  </tr>
+  <tr>
+    <td>
+     <img src="https://github.com/hyun45/shop/assets/159392652/47f47945-4623-4a33-8bf8-fcf231308fbc" />
+    </td>
+   </tr>
+  <tr>
     <th>
       상품 등록
     </th>
   </tr>
   <tr>
     <td>
-      <img src="https://github.com/hyun45/backup/assets/159392652/fbf059ec-a5e3-4896-855c-42bdc019a6f4" />
-    </td>
-    <td>
-      <img src="https://github.com/hyun45/backup/assets/159392652/1000f860-1e1f-46ad-8a2e-97ab7c96cb89" />
+     <img src="https://github.com/hyun45/shop/assets/159392652/f8900e55-7157-420b-b01a-4cbf3fb8b526" />
     </td>
    </tr>
   <tr>
     <th>
       장바구니
     </th>
+  </tr>
+  <tr>
+    <td>
+     <img src="https://github.com/hyun45/shop/assets/159392652/50db67b2-325a-48b3-8e93-03f627dd594d" />
+    </td>
+   </tr>
+  <tr>
     <th>
       찜하기
     </th>
   </tr>
   <tr>
     <td>
-      <img src="https://github.com/hyun45/backup/assets/159392652/493ba819-6698-4e39-9a22-625547fb19a8" />
-    </td>
-    <td>
-      <img src="https://github.com/hyun45/backup/assets/159392652/25f59ddb-2665-42b8-b25d-bbddbda34a2d" />
+     <img src="https://github.com/hyun45/shop/assets/159392652/91d7dba7-f77d-4f26-b8fd-7bb8725da32c" />
     </td>
    </tr>
    <tr>
     <th>
-      상품 상세 페이지 바로 결제
+      바로 결제
     </th>
+  </tr>
+  <tr>
+    <td>
+     <img src="https://github.com/hyun45/shop/assets/159392652/1bbcd792-294f-4524-8d76-eb2a89f1a74f" />
+    </td>
+  </tr>
+   <tr>
     <th>
       장바구니 상품 결제
     </th>
   </tr>
   <tr>
     <td>
-      <img src="https://github.com/hyun45/backup/assets/159392652/0d4f2487-35fa-4480-8304-0a3455918221" />
+     <img src="https://github.com/hyun45/shop/assets/159392652/2cd4fe64-1f4f-4959-a6e2-a822a01f3c96" />
     </td>
-    <td>
-      <img src="https://github.com/hyun45/backup/assets/159392652/3dc93f3f-da7d-41e7-b396-cd7c16e8903d" />
-    </td>
-    <tr>
-    <th>
-      관리자 페이지
-    </th>
-    <th>
-      FAQ
-    </th>
   </tr>
   <tr>
-    <td>
-      <img src="https://github.com/hyun45/backup/assets/159392652/ac6a95c4-7542-4efc-8747-cf5aa427ea30" />
-    </td>
-    <td>
-      <img src="https://github.com/hyun45/backup/assets/159392652/67f4c6b0-391c-4755-a2a6-4fb3a81bfa34" />
-    </td>
-   </tr> 
+   <th>
+    관리자 페이지
+   </th>
+  </tr>
+  <tr>
+   <td>
+    <img src="https://github.com/hyun45/shop/assets/159392652/98b59333-038e-4cf1-86d0-161d8fc9cd0f" />
+   </td>
+  </tr> 
+  <tr>
+   <th>
+     FAQ
+   </th>
+  </tr>
+  <tr>
+   <td>
+    <img src="https://github.com/hyun45/shop/assets/159392652/e82a626f-2e62-4e3d-93ff-0ba22c5fb185" />
+   </td>
+  </tr> 
 </table>
 </html>
 
